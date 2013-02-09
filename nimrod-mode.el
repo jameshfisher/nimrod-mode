@@ -412,6 +412,7 @@ On reaching column 0, it will cycle back to the maximum sensible indentation."
 ;;                             Wrap it all up ...                             ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;;###autoload
 (define-derived-mode nimrod-mode fundamental-mode
   "nimrod mode"
   "A major mode for the Nimrod programming language."
@@ -441,7 +442,8 @@ On reaching column 0, it will cycle back to the maximum sensible indentation."
   (setq indent-tabs-mode nil) ;; Always indent with SPACES!
   )
 
-(provide 'nimrod-mode)
-
+;;;###autoload
 (setq auto-mode-alist (cons '("\\.nim$" . nimrod-mode) auto-mode-alist))
 
+(provide 'nimrod-mode)
+;;; nimrod-mode.el ends here
