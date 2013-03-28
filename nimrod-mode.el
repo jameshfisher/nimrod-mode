@@ -445,3 +445,4 @@ On reaching column 0, it will cycle back to the maximum sensible indentation."
 
 (setq auto-mode-alist (cons '("\\.nim$" . nimrod-mode) auto-mode-alist))
 
+;;; nimrod-mode.el ends here
